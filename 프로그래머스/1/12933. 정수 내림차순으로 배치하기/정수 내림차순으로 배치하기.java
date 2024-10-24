@@ -1,15 +1,14 @@
 import java.util.*;
 class Solution {
     public long solution(long n) {
-        long answer = 0;
-        String nStr = n + "";
-        char[] nArr = nStr.toCharArray();
+        char[] nArr = String.valueOf(n).toCharArray();
         Arrays.sort(nArr);
-        String result = "";
-        for(int i = nArr.length-1; i >= 0; i--){
-            result += nArr[i];
+        
+        StringBuilder result = new StringBuilder();
+        for(int i = nArr.length-1; i >= 0; i--) {
+            result.append(nArr[i]);
         }
         
-        return answer = Long.parseLong(result);
+        return Long.parseLong(result.toString());
     }
 }
