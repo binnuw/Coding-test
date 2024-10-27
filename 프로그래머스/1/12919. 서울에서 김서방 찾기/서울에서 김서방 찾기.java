@@ -5,6 +5,7 @@ class Solution {
         for(int i = 0; i <= seoul.length-1; i++){
             if(seoul[i].equals("Kim")){
                 idx = i;
+                break;                
             }
         }
         String answer = "김서방은 " + idx + "에 있다";
