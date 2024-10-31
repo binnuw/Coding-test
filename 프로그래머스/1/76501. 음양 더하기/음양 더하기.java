@@ -1,7 +1,7 @@
 class Solution {
     public int solution(int[] absolutes, boolean[] signs) {
         int answer = 0;
-        for(int i = 0; i <= signs.length-1; i++){
+        for(int i = 0; i <= absolutes.length-1; i++){
             if(signs[i] == true){
                 answer += absolutes[i];
             } else {
